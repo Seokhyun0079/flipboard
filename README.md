@@ -1,59 +1,167 @@
 # Flipboard
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.0.
+Flipboard는 Angular 20 기반의 웹 애플리케이션입니다.
 
-## Development server
+## デモ動画
 
-To start a local development server, run:
+![デモ動画](test.mp4)
 
-```bash
-ng serve
-```
+## 技術スタック
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Angular 20
+- TypeScript
+- RxJS
+- Express (SSR 対応)
 
-## Code scaffolding
+## 始め方
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### 必要条件
 
-```bash
-ng generate component component-name
-```
+- Node.js (最新の LTS バージョン推奨)
+- npm または yarn
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+### インストール
 
 ```bash
-ng build
+# 依存関係のインストール
+npm install
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### 開発サーバーの起動
 
 ```bash
-ng test
+# 開発サーバー開始
+npm start
 ```
 
-## Running end-to-end tests
+ブラウザで `http://localhost:4200` にアクセスしてアプリケーションを確認できます。
 
-For end-to-end (e2e) testing, run:
+### ビルド
 
 ```bash
-ng e2e
+# プロダクションビルド
+npm run build
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+ビルドされたファイルは `dist/` ディレクトリに生成されます。
 
-## Additional Resources
+### SSR サーバーの起動
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```bash
+# SSRサーバー開始
+npm run serve:ssr:flipboard
+```
+
+### テスト
+
+```bash
+# ユニットテストの実行
+npm test
+```
+
+## デプロイ
+
+```bash
+# デプロイ
+npm run deploy
+```
+
+## プロジェクト構造
+
+```
+flipboard/
+├── src/              # ソースコード
+├── public/           # 静的ファイル
+├── docs/            # ドキュメント
+├── dist/            # ビルド成果物
+└── node_modules/    # 依存モジュール
+```
+
+## ライセンス
+
+このプロジェクトは MIT ライセンスの下で提供されています。
+
+---
+
+# Flipboard
+
+Flipboard는 Angular 20 기반의 웹 애플리케이션입니다.
+
+## 데모 영상
+
+![데모 영상](test.mp4)
+
+## 기술 스택
+
+- Angular 20
+- TypeScript
+- RxJS
+- Express (SSR 지원)
+
+## 시작하기
+
+### 필수 조건
+
+- Node.js (최신 LTS 버전 권장)
+- npm 또는 yarn
+
+### 설치
+
+```bash
+# 의존성 설치
+npm install
+```
+
+### 개발 서버 실행
+
+```bash
+# 개발 서버 시작
+npm start
+```
+
+브라우저에서 `http://localhost:4200`으로 접속하여 애플리케이션을 확인할 수 있습니다.
+
+### 빌드
+
+```bash
+# 프로덕션 빌드
+npm run build
+```
+
+빌드된 파일은 `dist/` 디렉토리에 생성됩니다.
+
+### SSR 서버 실행
+
+```bash
+# SSR 서버 시작
+npm run serve:ssr:flipboard
+```
+
+### 테스트
+
+```bash
+# 단위 테스트 실행
+npm test
+```
+
+## 배포
+
+```bash
+# 배포
+npm run deploy
+```
+
+## 프로젝트 구조
+
+```
+flipboard/
+├── src/              # 소스 코드
+├── public/           # 정적 파일
+├── docs/            # 문서
+├── dist/            # 빌드 결과물
+└── node_modules/    # 의존성 모듈
+```
+
+## 라이선스
+
+이 프로젝트는 MIT 라이선스를 따릅니다.
