@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #444444;
+}
+
+.transparent-white {
+  mix-blend-mode: multiply;
+  height: 100px;
+  filter: brightness(1.1) contrast(1.1);
+}

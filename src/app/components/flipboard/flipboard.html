@@ -1,0 +1,24 @@
+<div class="flipboard-container">
+  <div class="flipboard-display">
+    <div
+      *ngFor="let card of displayText; let i = index"
+      class="flipboard-card"
+      [class.flipping]="isFlipping[i]"
+      (click)="flipCard(i)"
+    >
+      <div class="flipboard-card-up">{{ card }}</div>
+      <div class="flipboard-card-down">{{ card }}</div>
+    </div>
+  </div>
+  <div class="controls">
+    <input
+      [(ngModel)]="inputText"
+      placeholder="표시할 텍스트를 입력하세요"
+      (keyup.enter)="startAnimation()"
+      [disabled]="newText.length > 0"
+    />
+    <button (click)="startAnimation()" [disabled]="newText.length > 0">
+      시작
+    </button>
+  </div>
+</div>
