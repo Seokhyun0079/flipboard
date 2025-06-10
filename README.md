@@ -4,7 +4,7 @@ Flipboard는 Angular 20 기반의 웹 애플리케이션입니다.
 
 ## デモ動画
 
-[![サンプル画像](docs/sample.png)](sample.mp4)
+[![サンプル画像](sample.png)](sample.mp4)
 
 ※ デモ動画は [sample.mp4](sample.mp4) ファイルでご確認いただけます。
 
@@ -91,7 +91,7 @@ Flipboard는 Angular 20 기반의 웹 애플리케이션입니다.
 
 ## 데모 영상
 
-[![샘플 이미지](docs/sample.png)](sample.mp4)
+[![샘플 이미지](sample.png)](sample.mp4)
 
 ※ 데모 영상은 [sample.mp4](sample.mp4) 파일에서 확인하실 수 있습니다.
 
